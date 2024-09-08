@@ -184,10 +184,12 @@ binary_sensor:
 text:
   - patform: template
     name: "Zone 1 coordinates"
-    optimistic: 
+    optimistic: True
+    restore_value: True
     min_length: 0
     max_length: 200
     mode: text
+    initial_value: "()"
 
 number:
   - platform: template
