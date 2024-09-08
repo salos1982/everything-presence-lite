@@ -183,6 +183,7 @@ binary_sensor:
 
 text:
   - patform: template
+    id: "zone_1_coords"
     name: "Zone 1 coordinates"
     optimistic: True
     restore_value: True
@@ -202,6 +203,16 @@ number:
     restore_value: True
     unit_of_measurement: "s"
     initial_value: 15
+  - platform: template
+    name: "Test value"
+    id: test_value
+    max_value: 10
+    min_value: 0
+    step: 1
+    optimistic: True
+    restore_value: True
+    unit_of_measurement: "s"
+    initial_value: 1
   - platform: template
     name: "Max Distance"
     id: distance
