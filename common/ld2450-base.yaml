@@ -181,6 +181,14 @@ binary_sensor:
     lambda: |-
       return id(target3_distance).state != 0;
 
+text:
+  - patform: template
+    name: "Zone 1 coordinates"
+    optimistic: 
+    min_length: 0
+    max_length: 200
+    mode: text
+
 number:
   - platform: template
     name: "Occupancy Off Delay"
